@@ -1,0 +1,136 @@
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #d9e4f5, #f4f7f9);
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4682b4;
+    padding: 1rem 5%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #aac9e3;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#doggo-gif {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+#doggo-gif:hover {
+    animation: spinPulsate 0.5s infinite;
+}
+
+@keyframes spinPulsate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(50);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+section {
+    padding: 4rem 5%;
+    border-bottom: 1px solid #d6e4f0;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+    font-size: 1.1em;
+}
+
+#resume a {
+    display: inline-block;
+    background-color: #4682b4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume a:hover {
+    background-color: #315a78;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 1.5rem 5%;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.reload-container {
+    background-color: [#ffffff];
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
